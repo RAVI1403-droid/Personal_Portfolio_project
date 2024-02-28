@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(187, 191, 194);
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(223, 218, 218);
+    /* width: 434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 200vh;
+    /* it's milisecond */
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.963);
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: rgb(223, 53, 175); */
+    height: 58vh;
+    width: 82vw;
+    margin: 88px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 2.5em;
+    /* font-weight: bold; */
+}
+
+.moreabout {
+    font-size: 2em;
+    margin-top: 22px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.buttons{
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+.btn {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(15, 41, 158);
+}
+
+.devPic img {
+    height: 58vh;
+    /* width: 40vh;     */
+}
+
+.hamburger{
+    position: absolute;
+        cursor: pointer;
+        top: 10px;
+        left: 10px;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross{
+    margin-left: 184px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1270px) {
+    /*{
+         background-color: rgb(250, 174, 174); 
+    }*/
+
+    .buttons{
+        font-size: 6px;
+    }
+
+    .devInfo{
+        font-size: 10px;
+    }
+
+    .devPic{
+        display: none;
+    }
+    /* .sidebar{ */
+        /* transform: translate(-443px, 0px); */
+        /* position: absolute; */
+    /* } */
+}
